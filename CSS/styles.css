@@ -1,0 +1,286 @@
+:root {
+--primary-color: #1c1c1c;
+--primary-color-lighter: lighten var(--primary-color, 20%);
+--primary-color-darker: darken var(--primary-color, 50%);
+--secondary-color: #FFE2BA;
+--secondary-color-lighter: lighten var(--secondary-color, 20%);
+--secondary-color-darker: darken var(--secondary-color, 90%);
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color:#383838;
+}
+
+h1 {
+  font-size: 30px;
+  color: var(--secondary-color);
+}
+
+h2 {
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+
+h3 {
+  font-size: 18px;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:visited {
+  text-decoration: none;
+
+}
+
+a:hover, a:focus  {
+  color: var(--secondary-color-darker);
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--secondary-color-darker);
+  text-decoration: none;
+}
+
+
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: var(--primary-color);
+  color:inherit;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+button:hover, button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  color: var(--primary-color);
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+.button__secondary {
+  background-color: var(--primary-color-lighter);
+  color: var(--secondary-color-lighter);
+}
+
+.navigation-list__item: hover {
+  color: var(--secondary-color-darken);
+}
+
+.navigation-list__item--active {
+  text-decoration: bold;
+  color: var(--secondary-color);
+}
+
+
+.article__img--right {
+  float: right;
+}
+
+.profile__portrait {
+  float: left;
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.profile__portrait {
+  float: left;
+  width: 200px;
+  margin-right: 40px;
+  border-radius:50%;
+}
+
+.profile__text {
+    flex: 1 1 100px;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  flex-basis: 200px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  border-bottom: 1px dotted var(--primary-color);
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.grid__item {
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+.grid__item:last-child {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+
+@media all and (max-width: 500px) {
+}
+
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+.button, button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the button */
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition-duration: 1s;
+  transition-property: opacity;
+}
+
+.button:hover, .button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.5;
+  color: var(--secondary-color-darker);
+}
+
+.about-me, .nyc-pic  {
+  text-align: center;
+  align-content: center;
+
+}
+
+.skills-experience  {
+  text-align: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+@keyframes color-change {
+  from {
+    fill: #FFE2BA;
+  }
+  to {
+    fill: #F7CD48;
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+  color: #DCFFFF;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+* {
+  box-sizing: border-box; }
