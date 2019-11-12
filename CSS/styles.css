@@ -1,10 +1,10 @@
 :root {
---primary-color: #1c1c1c;
---primary-color-lighter: lighten var(--primary-color, 20%);
---primary-color-darker: darken var(--primary-color, 50%);
---secondary-color: #FFE2BA;
---secondary-color-lighter: lighten var(--secondary-color, 20%);
---secondary-color-darker: darken var(--secondary-color, 90%);
+  --primary-color: #1c1c1c;
+  --primary-color-lighter: lighten var(--primary-color, 20%);
+  --primary-color-darker: darken var(--primary-color, 50%);
+  --secondary-color: #FFE2BA;
+  --secondary-color-lighter: lighten var(--secondary-color, 20%);
+  --secondary-color-darker: darken var(--secondary-color, 90%);
 }
 
 body {
@@ -13,6 +13,14 @@ body {
   font-size: 16px;
   line-height: 1.6;
   background-color:#383838;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 h1 {
@@ -62,7 +70,7 @@ button {
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: var(--primary-color);
-  color:inherit;
+  color: #1c1c1c;
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
@@ -89,8 +97,8 @@ button:hover, button:focus {
 }
 
 .navigation-list__item--active {
-  text-decoration: bold;
-  color: var(--secondary-color);
+  text-decoration: none;
+  color: var(--secondary-color-darken);
 }
 
 
@@ -103,10 +111,10 @@ button:hover, button:focus {
 }
 
 .page-footer {
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .profile {
@@ -122,22 +130,26 @@ button:hover, button:focus {
 }
 
 .profile__text {
-    flex: 1 1 100px;
+  flex: 1 1 100px;
 }
 
 .page-header {
   display: flex;
   width: 100%;
   padding: 20px;
-  flex-basis: 200px;
-  flex-shrink: 1;
-  flex-grow: 1;
-  border-bottom: 1px dotted var(--primary-color);
+}
+
+.page-header__logo {
+  max-width: 250px;
 }
 
 .page-header__item {
-  flex: 0 1 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
+
 
 .page-header__item:last-child {
   flex-grow: 1;
@@ -244,10 +256,12 @@ button:hover, button:focus {
 
 @keyframes color-change {
   from {
-    fill: #FFE2BA;
+    background-color: #FFE2BA;
+    color: #ffffff;
   }
   to {
-    fill: #F7CD48;
+    background-color: #F7CD48;
+    color: #ffffff;
   }
 }
 
@@ -275,7 +289,8 @@ button:hover, button:focus {
 
 .cloud-front {
   animation: 30s cloud-move infinite alternate linear;
-  color: #DCFFFF;
+  background-color: #ffffff;
+  color: #dcffff;
 }
 
 .cloud-back {
@@ -284,3 +299,13 @@ button:hover, button:focus {
 
 * {
   box-sizing: border-box; }
+
+  div {
+    display: block;
+  }
+
+  .contact {
+      display: block;
+      justify-content: center;
+      text-align: center;
+  }

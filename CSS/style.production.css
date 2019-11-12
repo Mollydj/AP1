@@ -6,6 +6,18 @@ body {
   background-color:#383838;
 }
 
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+            margin-block-start: 1em;
+    -webkit-margin-after: 1em;
+            margin-block-end: 1em;
+    -webkit-margin-start: 0px;
+            margin-inline-start: 0px;
+    -webkit-margin-end: 0px;
+            margin-inline-end: 0px;
+}
+
 h1 {
   font-size: 30px;
   color: #FFE2BA;
@@ -58,7 +70,7 @@ button {
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: #1c1c1c;
-  color:inherit;
+  color: #1c1c1c;
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
@@ -93,9 +105,8 @@ button:focus {
 }
 
 .navigation-list__item--active {
-  -webkit-text-decoration: bold;
-          text-decoration: bold;
-  color: #FFE2BA;
+  text-decoration: none;
+  color: undefined;
 }
 
 
@@ -108,15 +119,15 @@ button:focus {
 }
 
 .page-footer {
-    clear: both;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
 .profile {
@@ -132,9 +143,9 @@ button:focus {
 }
 
 .profile__text {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100px;
-            flex: 1 1 100px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
 }
 
 .page-header {
@@ -143,21 +154,25 @@ button:focus {
   display: flex;
   width: 100%;
   padding: 20px;
-  -ms-flex-preferred-size: 200px;
-      flex-basis: 200px;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  border-bottom: 1px dotted #1c1c1c;
+}
+
+.page-header__logo {
+  max-width: 250px;
 }
 
 .page-header__item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
+
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
@@ -310,19 +325,23 @@ button {
 
 @-webkit-keyframes color-change {
   from {
-    fill: #FFE2BA;
+    background-color: #FFE2BA;
+    color: #ffffff;
   }
   to {
-    fill: #F7CD48;
+    background-color: #F7CD48;
+    color: #ffffff;
   }
 }
 
 @keyframes color-change {
   from {
-    fill: #FFE2BA;
+    background-color: #FFE2BA;
+    color: #ffffff;
   }
   to {
-    fill: #F7CD48;
+    background-color: #F7CD48;
+    color: #ffffff;
   }
 }
 
@@ -378,7 +397,8 @@ button {
 .cloud-front {
   -webkit-animation: 30s cloud-move infinite alternate linear;
           animation: 30s cloud-move infinite alternate linear;
-  color: #DCFFFF;
+  background-color: #ffffff;
+  color: #dcffff;
 }
 
 .cloud-back {
@@ -389,3 +409,15 @@ button {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+  div {
+    display: block;
+  }
+
+  .contact {
+      display: block;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      text-align: center;
+  }
