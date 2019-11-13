@@ -2,7 +2,7 @@
   --primary-color: #1c1c1c;
   --primary-color-lighter: lighten var(--primary-color, 20%);
   --primary-color-darker: darken var(--primary-color, 50%);
-  --secondary-color: #FFE2BA;
+  --secondary-color: #ffe2ba;
   --secondary-color-lighter: lighten var(--secondary-color, 20%);
   --secondary-color-darker: darken var(--secondary-color, 90%);
 }
@@ -12,15 +12,11 @@ body {
   color: white;
   font-size: 16px;
   line-height: 1.6;
-  background-color:#383838;
+  background-color: #383838;
 }
 
 p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  display: block;
 }
 
 h1 {
@@ -49,10 +45,10 @@ ul {
 
 a:visited {
   text-decoration: none;
-
 }
 
-a:hover, a:focus  {
+a:hover,
+a:focus {
   color: var(--secondary-color-darker);
   text-decoration: none;
 }
@@ -62,27 +58,32 @@ a:active {
   text-decoration: none;
 }
 
-
 button {
   /* overwrites browser defaults and resets the border */
   border: none;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: var(--primary-color);
   color: #1c1c1c;
   text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
+
+  /* adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
+
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
   color: var(--primary-color);
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
@@ -100,7 +101,6 @@ button:hover, button:focus {
   text-decoration: none;
   color: var(--secondary-color-darken);
 }
-
 
 .article__img--right {
   float: right;
@@ -126,7 +126,7 @@ button:hover, button:focus {
   float: left;
   width: 200px;
   margin-right: 40px;
-  border-radius:50%;
+  border-radius: 50%;
 }
 
 .profile__text {
@@ -149,7 +149,6 @@ button:hover, button:focus {
   align-items: center;
   justify-content: flex-end;
 }
-
 
 .page-header__item:last-child {
   flex-grow: 1;
@@ -180,16 +179,12 @@ button:hover, button:focus {
 
 .grid__item:last-child {
   grid-column-start: 3;
-  grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 3;
 }
 
+@media all and (max-width: 500px)
 
-@media all and (max-width: 500px) {
-}
-
-@media all and (min-width: 500px) and (max-width: 750px){
+  @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -205,70 +200,67 @@ button:hover, button:focus {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
 }
 
-.button, button {
+.button,
+button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the button */
   background-color: var(--primary-color);
   color: var(--secondary-color);
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition-duration: 1s;
   transition-property: opacity;
 }
 
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.5;
   color: var(--secondary-color-darker);
 }
 
-.about-me, .nyc-pic  {
+.about-me,
+.nyc-pic {
   text-align: center;
   align-content: center;
-
 }
 
-.skills-experience  {
+.skills-experience {
   text-align: center;
   align-content: center;
   margin-left: auto;
   margin-right: auto;
-
-}
-
-@keyframes color-change {
-  from {
-    background-color: #FFE2BA;
-    color: #ffffff;
-  }
-  to {
-    background-color: #F7CD48;
-    color: #ffffff;
-  }
 }
 
 @keyframes cloud-move {
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -278,6 +270,7 @@ button:hover, button:focus {
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
@@ -289,7 +282,7 @@ button:hover, button:focus {
 
 .cloud-front {
   animation: 30s cloud-move infinite alternate linear;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #dcffff;
 }
 
@@ -298,14 +291,15 @@ button:hover, button:focus {
 }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
-  div {
-    display: block;
-  }
+div {
+  display: block;
+}
 
-  .contact {
-      display: block;
-      justify-content: center;
-      text-align: center;
-  }
+.contact {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
