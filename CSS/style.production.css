@@ -13,21 +13,21 @@ p {
 
 h1 {
   font-size: 30px;
-  color: #ad672b;
+  color: #BE8662;
   font-family: 'Poppins', sans-serif;
 }
 
 total-logo {
   font-size: 50px;
   margin: 10px;
-  color: #ad672b;
+  color: #BE8662;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
 }
 
 h2 {
   font-size: 24px;
-  color: #ad672b;
+  color: #BE8662;
 }
 
 h3 {
@@ -35,7 +35,7 @@ h3 {
 }
 
 a {
-  color: #ad672b;
+  color: #BE8662;
   text-decoration: none;
   font-weight: bold;
 }
@@ -49,17 +49,17 @@ a:visited {
 }
 
 a:hover {
-  color: darken #ad672b;
+  color: darken #BE8662;
   text-decoration: none;
 }
 
 a:focus {
-  color: darken #ad672b;
+  color: darken #BE8662;
   text-decoration: none;
 }
 
 a:active {
-  color: darken #ad672b;
+  color: darken #BE8662;
   text-decoration: none;
 }
 
@@ -294,7 +294,7 @@ button {
 
   /* reduces the opacity of the button to 80% */
   opacity: 0.5;
-  color: darken #ad672b;
+  color: darken #BE8662;
 }
 
 .button:focus {
@@ -303,7 +303,7 @@ button {
 
   /* reduces the opacity of the button to 80% */
   opacity: 0.5;
-  color: darken #ad672b;
+  color: darken #BE8662;
 }
 
 .about-me,

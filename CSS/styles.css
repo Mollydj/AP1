@@ -2,7 +2,7 @@
   --primary-color: #ede6e0;
   --primary-color-lighter: lighten var(--primary-color, 20%);
   --primary-color-darker: darken var(--primary-color, 50%);
-  --secondary-color: #ad672b;
+  --secondary-color: #BE8662;
   --secondary-color-lighter: lighten var(--secondary-color, 20%);
   --secondary-color-darker: darken var(--secondary-color, 90%);
   --third-color: #6E7A70;
