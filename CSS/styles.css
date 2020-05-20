@@ -1,18 +1,26 @@
 :root {
-  --primary-color: #1c1c1c;
+  --primary-color: #ede6e0;
   --primary-color-lighter: lighten var(--primary-color, 20%);
   --primary-color-darker: darken var(--primary-color, 50%);
-  --secondary-color: #ffe2ba;
+  --secondary-color: #ad672b;
   --secondary-color-lighter: lighten var(--secondary-color, 20%);
   --secondary-color-darker: darken var(--secondary-color, 90%);
+  --third-color: #6E7A70;
+  --third-color-lighter: lighten var(--third-color, 20%);
+  --fourth-color: #5C695F;
+  --fourth-color-lighter: lighten var(--fourth-color, 20%);
+
 }
 
+
+
 body {
-  font-family: 'Josefin Sans', sans-serif;
-  color: white;
+  color: black;
   font-size: 16px;
   line-height: 1.6;
-  background-color: #383838;
+  background-color: #ede6e0;
+  font-weight: 200;
+  font-family: 'Poppins', sans-serif;
 }
 
 p {
@@ -21,8 +29,16 @@ p {
 
 h1 {
   font-size: 30px;
-  margin: 20px;
   color: var(--secondary-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+total-logo {
+  font-size: 50px;
+  margin: 10px;
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
 }
 
 h2 {
@@ -59,16 +75,17 @@ a:active {
   text-decoration: none;
 }
 
-button {
+a.button {
   /* overwrites browser defaults and resets the border */
   border: none;
 
   /* takes the font from the outer container */
-  font-family: inherit;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
 
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: var(--primary-color);
-  color: #1c1c1c;
+  background-color:var(--fourth-color);
+  color: var(--primary-color);
   text-decoration: none;
 
   /* adds spacing to the button (this will be discussed more in-depth later) */
@@ -79,23 +96,28 @@ button {
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-button:hover,
+a.button:hover,
 button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
   color: var(--primary-color);
+  background-color:var(--fourth-color);
 
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
 
 .button__secondary {
-  background-color: var(--primary-color-lighter);
-  color: var(--secondary-color-lighter);
+  background-color: var(--fourth-color);
+  color: var(--primary-color);
 }
 
-.navigation-list__item: hover {
-  color: var(--secondary-color-darken);
+.navigation-list__item {
+  color: var(--third-color);
+}
+
+.navigation-list__item hover {
+  color: var(--fourth-color);
 }
 
 .navigation-list__item--active {
@@ -109,18 +131,31 @@ button:focus {
 
 .profile__portrait {
   float: left;
+
 }
 
 .page-footer {
+
   clear: both;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:var(--fourth-color);
+  color: white;
   text-align: center;
 }
 
 .profile {
   max-width: 700px;
   margin: 0 auto;
+  align-content: center;
+  text-align: center;
+
+
 }
 
 .profile__portrait {
@@ -128,6 +163,7 @@ button:focus {
   width: 200px;
   margin-right: 40px;
   border-radius: 50%;
+  align-items: center;
 }
 
 .profile__text {
@@ -136,8 +172,9 @@ button:focus {
 
 .page-header {
   display: flex;
-  width: 100%;
-  padding: 20px;
+  text-align: left;
+  padding-right: 30px;
+  margin-bottom: 100px;
 }
 
 .page-header__logo {
@@ -183,7 +220,7 @@ button:focus {
   grid-row-start: 1;
 }
 
-@media all and (max-width: 500px)
+@media all and (max-width: 500px){}
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
@@ -217,13 +254,13 @@ button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
-
+  font-family: 'Poppins', sans-serif;
   /* takes the font from the outer container */
-  font-family: inherit;
+  font-family: 'Poppins', sans-serif;
 
   /* styles the button */
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: var(--third-color);
+  color: var(--fourth-color);
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
