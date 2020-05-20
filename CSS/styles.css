@@ -36,7 +36,7 @@ h1 {
 total-logo {
   font-size: 50px;
   margin: 10px;
-  color: var(--secondary-color);
+  color: #A3664E;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
 }
@@ -51,7 +51,7 @@ h3 {
 }
 
 a {
-  color: var(--secondary-color);
+  color: var(--third-color);
   text-decoration: none;
   font-weight: bold;
 }
@@ -71,8 +71,7 @@ a:focus {
 }
 
 a:active {
-  color: var(--secondary-color-darker);
-  text-decoration: none;
+  color: var( --third-color-lighter);
 }
 
 a.button {
@@ -122,7 +121,9 @@ button:focus {
 
 .navigation-list__item--active {
   text-decoration: none;
-  color: var(--secondary-color-darken);
+  color: var( --fourth-color);
+  border-bottom: 1px solid var( --fourth-color);
+
 }
 
 .article__img--right {
@@ -141,6 +142,7 @@ button:focus {
   flex-direction: column;
   text-align: center;
   position: fixed;
+  margin-top: 30px;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -154,7 +156,7 @@ button:focus {
   margin: 0 auto;
   align-content: center;
   text-align: center;
-
+  margin-top: 100px;
 
 }
 
@@ -174,7 +176,7 @@ button:focus {
   display: flex;
   text-align: left;
   padding-right: 30px;
-  margin-bottom: 100px;
+
 }
 
 .page-header__logo {
@@ -211,7 +213,7 @@ button:focus {
 }
 
 .grid__item {
-  background-color: var(--primary-color);
+  background-color: #E8DBCE;
   padding: 10px;
 }
 

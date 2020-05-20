@@ -11,6 +11,11 @@ p {
   display: block;
 }
 
+li {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
 h1 {
   font-size: 30px;
   color: #BE8662;
@@ -20,7 +25,7 @@ h1 {
 total-logo {
   font-size: 50px;
   margin: 10px;
-  color: #BE8662;
+  color: #A3664E;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
 }
@@ -35,7 +40,7 @@ h3 {
 }
 
 a {
-  color: #BE8662;
+  color: #6E7A70;
   text-decoration: none;
   font-weight: bold;
 }
@@ -59,8 +64,7 @@ a:focus {
 }
 
 a:active {
-  color: darken #BE8662;
-  text-decoration: none;
+  color: lighten #6E7A70;
 }
 
 a.button {
@@ -119,7 +123,9 @@ button:focus {
 
 .navigation-list__item--active {
   text-decoration: none;
-  color: undefined;
+  color: #5C695F;
+  border-bottom: 1px solid #5C695F;
+
 }
 
 .article__img--right {
@@ -138,6 +144,7 @@ button:focus {
   flex-direction: column;
   text-align: center;
   position: fixed;
+  margin-top: 30px;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -151,7 +158,7 @@ button:focus {
   margin: 0 auto;
   align-content: center;
   text-align: center;
-
+  margin-top: 100px;
 
 }
 
@@ -171,7 +178,7 @@ button:focus {
   display: flex;
   text-align: left;
   padding-right: 30px;
-  margin-bottom: 100px;
+
 }
 
 .page-header__logo {
@@ -208,7 +215,7 @@ button:focus {
 }
 
 .grid__item {
-  background-color: #ede6e0;
+  background-color: #E8DBCE;
   padding: 10px;
 }
 
@@ -347,7 +354,7 @@ button {
   animation: 30s cloud-move infinite alternate linear;
   background-color: #fff;
   color: #dcffff;
-} 
+}
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
