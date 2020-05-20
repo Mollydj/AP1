@@ -347,7 +347,7 @@ button {
   animation: 30s cloud-move infinite alternate linear;
   background-color: #fff;
   color: #dcffff;
-}
+} 
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
