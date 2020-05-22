@@ -288,10 +288,15 @@ button {
   color: var(--secondary-color-darker);
 }
 
-.about-me,
-.nyc-pic {
+.about-me {
   text-align: center;
   align-content: center;
+  width: 80%;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #d5c5b8;
+  display: inline-block;
+  padding: 20px;
 }
 
 .skills-experience {

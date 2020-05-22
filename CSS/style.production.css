@@ -5,7 +5,8 @@ body {
   background-color: #ede6e0;
   font-weight: 200;
   font-family: 'Poppins', sans-serif;
-  margin-bottom: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
 p {
@@ -211,15 +212,13 @@ button:focus {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   padding: 20px;
-  
 }
 
 .grid__item {
   background-color: #E8DBCE;
   padding: 10px;
+  align-items: center;
   text-align: center;
-
-  
 }
 
 .grid__item:last-child {
@@ -316,10 +315,15 @@ button {
   color: darken #BE8662;
 }
 
-.about-me,
-.nyc-pic {
+.about-me {
   text-align: center;
   align-content: center;
+  width: 80%;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #d5c5b8;
+  display: inline-block;
+  padding: 20px;
 }
 
 .skills-experience {
