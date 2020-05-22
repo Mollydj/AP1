@@ -149,6 +149,8 @@ button:focus {
   background-color:#A3664E;
   color: white;
   text-align: center;
+  padding-bottom: 20px;
+  margin-bottom:20px;
 }
 
 .profile {

@@ -4,21 +4,11 @@ body {
   line-height: 1.6;
   background-color: #ede6e0;
   font-weight: 200;
-  font-family: 'Ubuntu Condensed', sans-serif;
-  margin-bottom: 260px;
+  font-family: 'Poppins', sans-serif;
 }
 
 p {
   display: block;
-}
-
-img {
-  text-align: center;
-}
-
-li {
-  list-style-type: none;
-  padding-left: 0px;
 }
 
 h1 {
@@ -149,13 +139,15 @@ button:focus {
   flex-direction: column;
   text-align: center;
   position: fixed;
-  margin-top: 60px;
+  margin-top: 30px;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color:#A3664E;
   color: white;
   text-align: center;
+  padding-bottom: 20px;
+  margin-bottom:20px;
 }
 
 .profile {
@@ -222,8 +214,6 @@ button:focus {
 .grid__item {
   background-color: #E8DBCE;
   padding: 10px;
-  align-content: center;
-  text-align: center;
 }
 
 .grid__item:last-child {
