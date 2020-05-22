@@ -5,6 +5,7 @@ body {
   background-color: #ede6e0;
   font-weight: 200;
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 200px;
 }
 
 p {
@@ -17,11 +18,13 @@ h1 {
   font-family: 'Poppins', sans-serif;
 }
 
-total-logo {
+.total-logo {
   font-size: 50px;
   margin: 10px;
   color: #A3664E;
   font-weight: 700;
+  margin-left:30px;
+  margin-top:20px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -114,7 +117,6 @@ button:focus {
 
 .navigation-list__item hover {
   color: #5C695F;
-  font-size: 100px;
 }
 
 .navigation-list__item--active {
@@ -148,7 +150,6 @@ button:focus {
   color: white;
   text-align: center;
   padding-bottom: 20px;
-  margin-bottom:20px;
 }
 
 .profile {
@@ -210,11 +211,15 @@ button:focus {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   padding: 20px;
+  
 }
 
 .grid__item {
   background-color: #E8DBCE;
   padding: 10px;
+  text-align: center;
+
+  
 }
 
 .grid__item:last-child {
