@@ -11,6 +11,7 @@ body {
 
 p {
   display: block;
+  padding: 10px;
 }
 
 h1 {
@@ -32,6 +33,7 @@ h1 {
 h2 {
   font-size: 24px;
   color: #BE8662;
+
 }
 
 h3 {
@@ -127,6 +129,9 @@ button:focus {
 
 }
 
+
+
+
 .article__img--right {
   float: right;
 }
@@ -219,12 +224,16 @@ button:focus {
   padding: 10px;
   align-items: center;
   text-align: center;
+  object-fit: contain;
+  display: inline-block;
 }
 
 .grid__item:last-child {
   grid-column-start: 3;
   grid-row-start: 1;
 }
+
+
 
 @media all and (max-width: 500px){}
 
@@ -321,7 +330,7 @@ button {
   width: 80%;
   padding-left: 50px;
   padding-right: 50px;
-  background-color: #d5c5b8;
+  object-fit:cover; 
   display: inline-block;
   padding: 20px;
 }
