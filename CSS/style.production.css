@@ -1,5 +1,5 @@
 body {
-  color: black;
+  color: #381700;
   font-size: 16px;
   line-height: 1.6;
   background-color: #ede6e0;
@@ -38,6 +38,7 @@ h2 {
 
 h3 {
   font-size: 18px;
+  margin: 0px;
 }
 
 a {
@@ -221,7 +222,7 @@ button:focus {
 
 .grid__item {
   background-color: #E8DBCE;
-  padding: 10px;
+  padding: 20px;
   align-items: center;
   text-align: center;
   object-fit: contain;
