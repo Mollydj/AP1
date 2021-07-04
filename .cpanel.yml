@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/midjnpmu/Portfolio-Website
+    - export DEPLOYPATH=/home/midjnpmu/public_html/Portfolio-Website
     - /bin/cp -R * $DEPLOYPATH
